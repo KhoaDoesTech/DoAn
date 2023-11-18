@@ -65,7 +65,7 @@ New Products
 							<div class="item active">
 								<ul class="thumbnails">
 									<c:forEach var="item" items="${ products }" varStatus="loop">
-										<li class="span3">
+										<li class="span4">
 											<div class="thumbnail">
 												<a class="zoomTool"
 													href="chi-tiet-san-pham/${ item.id_product }"
@@ -76,14 +76,16 @@ New Products
 												<div class="caption">
 													<h4>
 														<a class="defaultBtn"
-															href="chi-tiet-san-pham/${ item.id_product }">VIEW</a> <span
-															class="pull-right">$22.00</span>
+															href="chi-tiet-san-pham/${ item.id_product }">VIEW</a> 
+															<span class="pull-right">															
+																<fmt:formatNumber type="number" groupingUsed="true" value="${ item.price }" />₫
+															</span>								
 													</h4>
 												</div>
 											</div>
 										</li>
 										<c:if
-											test="${ (loop.index + 1) % 4 == 0 || (loop.index + 1)  == products.size() }">
+											test="${ (loop.index + 1) % 3 == 0 || (loop.index + 1)  == products.size() }">
 								</ul>
 							</div>
 							<c:if test="${ (loop.index + 1) < products.size() }">
