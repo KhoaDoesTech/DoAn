@@ -9,7 +9,7 @@ public class MapperUsers implements RowMapper<Users> {
 	public Users mapRow (ResultSet rs, int rowNum) throws SQLException {
 		Users user = new Users();
 		user.setId(rs.getLong("id"));
-		user.setUser(rs.getString("user"));
+		user.setEmail(rs.getString("email"));
 		user.setPassword(rs.getString("password"));
 		user.setDisplay_name (rs.getString("display_name"));
 		user.setAddress(rs.getString("address"));

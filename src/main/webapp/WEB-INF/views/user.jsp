@@ -35,9 +35,9 @@
 						<a href="#"><span class="icon-tumblr"></span></a>
 					</div>
 					
-					<a class="active" href="index.html"> <span class="icon-home"></span> Trang chủ </a>
+					<a class="active" href="<c:url value="/"/>"> <span class="icon-home"></span> Trang chủ </a>
 					<a href="#"><span class="icon-user"></span> Tài khoản</a>
-					<a href="register.html"><span class="icon-edit"></span> Đăng ký </a>
+					<a href="<c:url value="/dang-ky"/>"><span class="icon-edit"></span> Đăng ký </a>
 					<a href="contact.html"><span class="icon-envelope"></span> Liên hệ</a>
 					<a href="<c:url value="/gio-hang"/>">
 						<span class="icon-shopping-cart"></span> ${ TotalQuantyCart } Sản phẩm -

@@ -89,7 +89,7 @@
 			  <div class="control-group">
 				<label class="control-label" for="inputEmail">Email</label>
 				<div class="controls">
-				  <form:input type="email" class="span3" placeholder="Mời nhập email"  path="user" />  
+				  <form:input type="email" class="span3" placeholder="Mời nhập email"  path="email" />  
 				</div>
 			  </div> 	
 			  
@@ -130,7 +130,7 @@
 			  <div class="control-group">
 				<label class="control-label" for="inputEmail">Email</label>
 				<div class="controls">
-				<form:input type="email" class="span3" placeholder=" Mời nhập email"  path="user" />
+				<form:input type="email" class="span3" placeholder=" Mời nhập email"  path="email" />
 				</div>
 			  </div>
 			  <div class="control-group">

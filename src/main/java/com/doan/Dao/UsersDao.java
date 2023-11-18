@@ -18,7 +18,7 @@ public class UsersDao extends BaseDao{
 		sql.append(") ");
 		sql.append("VALUES ");
 		sql.append("(");
-		sql.append("'"+user.getUser()+"', ");
+		sql.append("'"+user.getEmail()+"', ");
 		sql.append("'"+user.getPassword()+"', ");
 		sql.append("'"+user.getDisplay_name()+"', ");
 		sql.append("'"+user.getAddress()+"'");
@@ -29,7 +29,7 @@ public class UsersDao extends BaseDao{
 	};
 	
 	public Users GetUserByAcc(Users user) {
-		String sql ="SELECT * FROM Users WHERE email ='"+user.getUser()+"'";
+		String sql ="SELECT * FROM Users WHERE email ='"+user.getEmail()+"'";
 		Users result = _jdbcTemplate.queryForObject(sql,new MapperUsers());
 		return result;
 	};

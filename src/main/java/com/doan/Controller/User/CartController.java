@@ -89,7 +89,7 @@ public class CartController extends BaseController{
 		if(loginInfo != null) {
 			bills.setAddress(loginInfo.getAddress());
 			bills.setDisplay_name(loginInfo.getDisplay_name());
-			bills.setUser(loginInfo.getUser());
+			bills.setUser(loginInfo.getEmail());
 		}
 		_mvShare.addObject("bills", bills);
 		return _mvShare;
