@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="span4">
 			<h1>
-				<a class="logo" href="index.html"><span>Twitter Bootstrap
+				<a class="logo" href="<c:url value="/"/>"><span>Twitter Bootstrap
 						ecommerce template</span> <img
 					src="<c:url value="/assets/user/img/logo.png" />"
 					alt="bootstrap sexy shop"> </a>
@@ -41,7 +41,7 @@ Navigation Bar Section
 						<c:if test="${ not index.first }">
 							<li class="">
 						</c:if>
-						<a href="index.html">${ item.name } </a></li>
+						<a href="<c:url value="/${ item.url }"/>">${ item.name } </a></li>
 					</c:forEach>
 					
 				</ul>
