@@ -47,7 +47,7 @@ Footer
 		
 		<div class="span2">
 			<h5>Information</h5>
-			<a href="contact.html">CONTACT</a><br>
+			<a href="#">CONTACT</a><br>
 			<a href="#">SITEMAP</a><br>
 			<a href="#">LEGAL NOTICE</a><br>
 			<a href="#">TERMS AND CONDITIONS</a><br>

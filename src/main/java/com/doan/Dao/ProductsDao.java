@@ -9,7 +9,8 @@ import com.doan.Dto.ProductsDto;
 import com.doan.Dto.ProductsDtoMapper;
 
 @Repository
-public class ProductsDao extends BaseDao{
+public class ProductsDao extends BaseDao {
+
 	private final boolean YES = true;
 	private final boolean NO = false;
 
@@ -42,27 +43,31 @@ public class ProductsDao extends BaseDao{
 
 	private String SqlProducts(boolean newProduct, boolean highLight) {
 		StringBuffer sql = SqlString();
-		sql.append("WHERE 1 = 1 ");
+		sql.append("WHERE ");
 		if (highLight) {
-			sql.append("AND p.highlight = 0 ");
+			sql.append("p.highlight = 0 ");
+			String insertString = "TOP 9 ";
+			sql.insert(7, insertString);
 		}
 		if (newProduct) {
-			sql.append("AND p.new_product = 0 ");
+			sql.append("p.new_product = 0 ");
+			String insertString = "TOP 12 ";
+			sql.insert(7, insertString);
 		}
-		sql.append("ORDER BY RAND() ");
+		sql.append("ORDER BY NEWID() ");
 		return sql.toString();
 	}
 
 	private StringBuffer SqlProductsByID(int id) {
 		StringBuffer sql = SqlString();
-		sql.append("WHERE 1 = 1 ");
-		sql.append("AND id_category = " + id + " ");
+		sql.append("WHERE id_category = " + id + " ");
 		return sql;
 	}
 	
 	private String SqlProductsPaginate(int id, int start, int totalPage) {
 		StringBuffer sql = SqlProductsByID(id);
-		sql.append("LIMIT " + start + ", "+ totalPage);
+		sql.append("ORDER BY NEWID() ");
+		sql.append("OFFSET " + start + " ROWS FETCH NEXT " + totalPage + " ROWS ONLY");
 		return sql.toString();
 	}
 
@@ -89,11 +94,10 @@ public class ProductsDao extends BaseDao{
 		return listProducts;
 	}
 
-	public String SqlProductByID(long id) {
+	private String SqlProductByID(long id) {
 		StringBuffer sql = SqlString();
-		sql.append("WHERE 1 = 1 ");
-		sql.append("AND p.id = " + id + " ");
-		sql.append("LIMIT 1 ");
+		sql.append("WHERE p.id = " + id + " ");
+		//sql.append("LIMIT 1 ");
 		return sql.toString();
 	}
 	

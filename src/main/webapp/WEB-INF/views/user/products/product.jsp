@@ -47,30 +47,30 @@ Body Section
 			<ul class="nav nav-list promowrapper">
 			<li>
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
 				<img src="assets/img/bootstrap-ecommerce-templates.png" alt="bootstrap ecommerce templates">
 				<div class="caption">
-				  <h4><a class="defaultBtn" href="product_details.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+				  <h4><a class="defaultBtn" href="#">VIEW</a> <span class="pull-right">$22.00</span></h4>
 				</div>
 			  </div>
 			</li>
 			<li style="border:0"> &nbsp;</li>
 			<li>
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
 				<img src="assets/img/shopping-cart-template.png" alt="shopping cart template">
 				<div class="caption">
-				  <h4><a class="defaultBtn" href="product_details.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+				  <h4><a class="defaultBtn" href="#">VIEW</a> <span class="pull-right">$22.00</span></h4>
 				</div>
 			  </div>
 			</li>
 			<li style="border:0"> &nbsp;</li>
 			<li>
 			  <div class="thumbnail">
-				<a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
+				<a class="zoomTool" href="#" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
 				<img src="assets/img/bootstrap-template.png" alt="bootstrap template">
 				<div class="caption">
-				  <h4><a class="defaultBtn" href="product_details.html">VIEW</a> <span class="pull-right">$22.00</span></h4>
+				  <h4><a class="defaultBtn" href="#">VIEW</a> <span class="pull-right">$22.00</span></h4>
 				</div>
 			  </div>
 			</li>
@@ -159,8 +159,8 @@ Body Section
 			<form class="form-horizontal qtyFrm">
 			<h3> <fmt:formatNumber type="number" groupingUsed="true" value="${ product.price }" />₫</h3>
 			<div class="btn-group">
-			  <a href="product_details.html" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
-			  <a href="product_details.html" class="shopBtn">VIEW</a>
+			  <a href="#" class="defaultBtn"><span class=" icon-shopping-cart"></span> Add to cart</a>
+			  <a href="#" class="shopBtn">VIEW</a>
 			 </div>
 				</form>
 			</div>
