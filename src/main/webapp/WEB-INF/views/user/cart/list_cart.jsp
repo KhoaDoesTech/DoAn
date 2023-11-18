@@ -8,11 +8,11 @@
 <div class="row">
 	<div class="span12">
     <ul class="breadcrumb">
-		<li><a href="index.html">Trang chủ</a> <span class="divider">/</span></li>
+		<li><a href="<c:url value="/"/>">Trang chủ</a> <span class="divider">/</span></li>
 		<li class="active">Giỏ hàng</li>
     </ul>
 	<div class="well well-small">
-		<h1>Giỏ hàng <small class="pull-right"> 2 Sản phẩm trong giỏ hàng </small></h1>
+		<h1>Giỏ hàng <small class="pull-right"> ${ TotalQuantyCart } Sản phẩm trong giỏ hàng </small></h1>
 	<hr class="soften"/>	
 
 	<table class="table table-bordered table-condensed">
@@ -40,7 +40,7 @@
 						<input type="number" min="0" max="1000" class="span1" style="max-width:34px" placeholder="1" id="appendedInputButtons" size="16" type="text" value="${ item.value.quanty }">
 					  </td>
 	                  <td>
-	                  	<a href="<c:url value="/EditCart/1"/>" class="btn btn-mini btn-danger" type="button">
+	                  	<a href="<c:url value="/EditCart/${ item.key }"/>" class="btn btn-mini btn-danger" type="button">
 	                  		<span class="icon-edit"></span>
 	                  	</a>
 	                  </td>
