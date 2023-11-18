@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div class="row">
-		<div id="sidebar" class="span3"></div>
+		<div id="sidebar" class="span2"></div>
 		<div class="span9">
 			<ul class="breadcrumb">
 				<li><a href="index.html">Trang chủ</a> <span class="divider">/</span></li>

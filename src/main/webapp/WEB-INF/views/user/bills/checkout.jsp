@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div class="row">
-		<div id="sidebar" class="span3">
+		<div id="sidebar" class="span2">
 		</div>
 		<div class="span9">
 			<ul class="breadcrumb">
@@ -18,7 +18,7 @@
 			<hr class="soft" />
 
 			<div class="row">
-				<div class="span4">
+				<div class="span8">
 					<div class="well">
 						<br /> <br />
 						<form:form action="checkout" method="POST" modelAttribute="bills" class="form-horizontal">
