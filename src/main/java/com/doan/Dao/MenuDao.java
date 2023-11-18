@@ -12,7 +12,7 @@ import com.doan.Entity.MapperMenus;
 public class MenuDao extends BaseDao{
 	public List<Menus> GetDataMenus(){
 		List<Menus> list = new ArrayList<Menus>();
-		String sql = "SELECT * FROM menus";
+		String sql = "SELECT * FROM Menu";
 		list = _jdbcTemplate.query(sql, new MapperMenus());
 		return list;
 	} 

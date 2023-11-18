@@ -12,7 +12,7 @@ import com.doan.Entity.MapperCategorys;
 public class CategorysDao extends BaseDao {
 	public List<Categorys> GetDataCategorys(){
 		List<Categorys> list = new ArrayList<Categorys>();
-		String sql = "SELECT * FROM categorys";
+		String sql = "SELECT * FROM Category";
 		list = _jdbcTemplate.query(sql, new MapperCategorys());
 		return list;
 	} 

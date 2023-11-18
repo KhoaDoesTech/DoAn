@@ -34,9 +34,9 @@ public class ProductsDao extends BaseDao {
 		sql.append(", p.created_at ");
 		sql.append(", p.updated_at ");
 		sql.append("FROM ");
-		sql.append("products AS p ");
+		sql.append("Product AS p ");
 		sql.append("INNER JOIN ");
-		sql.append("colors AS c ");
+		sql.append("Color AS c ");
 		sql.append("ON p.id = c.id_product ");
 		return sql;
 	}

@@ -18,7 +18,7 @@ public class HomeDao {
 	
 	public List<Slides> GetDataSlide(){
 		List<Slides> list = new ArrayList<Slides>();
-		String sql = "SELECT * FROM slides";
+		String sql = "SELECT * FROM Slide";
 		list = _jdbcTemplate.query(sql, new MapperSlides());
 		return list;
 	} 
