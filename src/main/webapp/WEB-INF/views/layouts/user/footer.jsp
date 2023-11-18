@@ -1,75 +1,47 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!-- 
-Clients 
--->
-<section class="our_client">
-	<hr class="soften" />
-	<h4 class="title cntr">
-		<span class="text">Manufactures</span>
-	</h4>
-	<hr class="soften" />
-	<div class="row">
-		<div class="span2">
-			<a href="#"><img alt="" src="assets/img/1.png"></a>
-		</div>
-		<div class="span2">
-			<a href="#"><img alt="" src="assets/img/2.png"></a>
-		</div>
-		<div class="span2">
-			<a href="#"><img alt="" src="assets/img/3.png"></a>
-		</div>
-		<div class="span2">
-			<a href="#"><img alt="" src="assets/img/4.png"></a>
-		</div>
-		<div class="span2">
-			<a href="#"><img alt="" src="assets/img/5.png"></a>
-		</div>
-		<div class="span2">
-			<a href="#"><img alt="" src="assets/img/6.png"></a>
-		</div>
-	</div>
-</section>
-
 <!--
 Footer
 -->
 <footer class="footer">
 	<div class="row-fluid">
-		<div class="span2">
-			<h5>Your Account</h5>
-			<a href="#">YOUR ACCOUNT</a><br>
-			<a href="#">PERSONAL INFORMATION</a><br>
-			<a href="#">ADDRESSES</a><br>
-			<a href="#">DISCOUNT</a><br>
-			<a href="#">ORDER HISTORY</a><br>
+		<div class="span3">
+			<h4 class="footer-menu__title">Chính sách</h4>
+			<ul>
+				<li><a href="#">Chính sách đổi trả 60 ngày</a></li>
+				<li><a
+					href="#">Chính sách khuyến mãi</a></li>
+				<li><a href="#">Chính sách bảo mật</a></li>
+				<li><a href="#">Chính sách giao hàng</a></li>
+			</ul>
 		</div>
-		
-		<div class="span2">
-			<h5>Information</h5>
-			<a href="#">CONTACT</a><br>
-			<a href="#">SITEMAP</a><br>
-			<a href="#">LEGAL NOTICE</a><br>
-			<a href="#">TERMS AND CONDITIONS</a><br>
-			<a href="#">ABOUT US</a><br>
+		<div class="span3">
+			<h4 class="footer-menu__title">Chăm sóc khách hàng</h4>
+			<ul>
+				<li><a
+					href="#">Trải nghiệm mua sắm 100% hài lòng</a></li>
+				<li><a href="#">Hỏi đáp - FAQs</a></li>
+				<li><a
+					href="#">Đăng kí tài khoản</a></li>
+				<li><a
+					href="#">Ưu đãi & Đặc quyền</a></li>
+			</ul>
 		</div>
-		
-		<div class="span2">
-			<h5>Our Offer</h5>
-			<a href="#">NEW PRODUCTS</a><br>
-			<a href="#">TOP SELLERS</a><br>
-			<a href="#">SPECIALS</a><br>
-			<a href="#">MANUFACTURERS</a><br>
-			<a href="#">SUPPLIERS</a><br>
+		<div class="span3">
+			<h4 class="footer-menu__title">Tài liệu - Tuyển dụng</h4>
+			<ul>
+				<li><a
+					href="#">Tuyển dụng</a></li>
+				<li><a
+					href="http://online.gov.vn/(X(1)S(sgmttobbtsiaq3l5itoicxhw))/Home/WebDetails/53184?AspxAutoDetectCookieSupport=1"
+					target="_blank">Đăng ký bản quyền</a></li>
+			</ul>
 		</div>
-		
-		<div class="span6">
-			<h5>The standard chunk of Lorem</h5>
-			The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-			below for those interested. Sections 1.10.32 and 1.10.33 from "de
-			Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-			exact original form, accompanied by English versions from the 1914
-			translation by H. Rackham.
+		<div class="span3">
+			<h4 class="footer-menu__title">Địa chỉ liên hệ</h4>
+			<p class="footer-menu__desciption">
+				01 Võ Văn Ngân, Linh Chiểu, Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
+			</p>
 		</div>
 	</div>
 </footer>
