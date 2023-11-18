@@ -66,7 +66,9 @@
 				<div class="span4">
 					<div class="well">
 						<h5>Đăng nhập hệ thống</h5>
-						<h1>${statusLogin}</h1>
+						<c:if test="${ statusLogin }">
+							<h1>${statusLogin}</h1>
+						</c:if>
 						<form:form action="dang-nhap" method="POST" modelAttribute="user">
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Email</label>

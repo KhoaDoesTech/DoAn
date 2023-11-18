@@ -8,5 +8,5 @@ import com.doan.Entity.Users;
 public interface IAccountService {
 	public int AddAccount(Users user);
 	
-	public boolean CheckAccount(Users user);
+	public Users CheckAccount(Users user);
 }
