@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.doan.Entity.Users;
 import com.doan.Service.User.AccountServiceImpl;
 
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 
@@ -42,9 +43,9 @@ public class UserController extends BaseController {
 	
 	@RequestMapping(value="/dang-nhap",method= RequestMethod.POST)
 	public ModelAndView Login(HttpSession session,@ModelAttribute("user") Users user) {
-		boolean check = accountService.CheckAccount(user);
+		user = accountService.CheckAccount(user);
 		
-		if(check) {
+		if(user != null) {
 			_mvShare.setViewName("redirect:trang-chu");
 			session.setAttribute("LoginInfo", user);
 		}
@@ -53,4 +54,10 @@ public class UserController extends BaseController {
 		}
 		return _mvShare;
 	}
+	
+	@RequestMapping(value="/dang-xuat",method= RequestMethod.GET)
+	public String Login(HttpSession session, HttpServletRequest request) {
+			session.removeAttribute("LoginInfo");
+			return "redirect:" +request.getHeader("Referer");
+		}
 }

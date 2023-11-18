@@ -17,18 +17,17 @@ public class AccountServiceImpl implements IAccountService {
 		return usersDao.AddAccount(user);
 	}
 
-	@Override
-	public boolean CheckAccount(Users user) {
+	public Users CheckAccount(Users user) {
 		String pass = user.getPassword();
 		user = usersDao.GetUserByAcc(user);
 		if(user != null) {
 			if(BCrypt.checkpw(pass, user.getPassword())) {
-				return true;
+				return user;
 			}
 			else{
-				return false;
+				return null;
 			}
 		}	
-		return false;
+		return null;
 	}
 }
