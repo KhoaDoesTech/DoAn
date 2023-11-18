@@ -120,7 +120,7 @@ New Products
 						<c:forEach var="item" items="${ products }" varStatus="loop">
 							<li class="span4">
 								<div class="thumbnail">
-									<a class="zoomTool" href="chi-tiet-san-pham/${ item.id_product }" title="Add to cart"><span
+									<a class="zoomTool" href="<c:url value="/chi-tiet-san-pham/${ item.id_product }"/>" title="Add to cart"><span
 										class="icon-search"></span> QUICK VIEW</a> <a
 										href="chi-tiet-san-pham/${ item.id_product }"><img
 										src="<c:url value="/assets/user/img/${ item.img }"/>" alt=""></a>
@@ -129,7 +129,7 @@ New Products
 										<h4>
 											<a class="defaultBtn" href="chi-tiet-san-pham/${ item.id_product }"
 												title="Click to view"><span class="icon-zoom-in"></span></a>
-											<a class="shopBtn" href="#" title="Add to cart"><span
+											<a class="shopBtn" href="<c:url value="/AddCart/${ item.id_product }"/>" title="Add to cart"><span
 												class="icon-plus"></span></a> <span class="pull-right"><fmt:formatNumber
 													type="number" groupingUsed="true" value="${ item.price }" />
 												₫</span>

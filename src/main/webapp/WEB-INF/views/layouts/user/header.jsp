@@ -11,14 +11,6 @@
 					alt="bootstrap sexy shop"> </a>
 			</h1>
 		</div>
-		<div class="span4">
-		</div>
-		<div class="span4 alignR">
-			<p>
-				<br> <strong> Support (24/7) : 0800 1234 678 </strong><br>
-				<br>
-			</p>
-		</div>
 	</div>
 </header>
 

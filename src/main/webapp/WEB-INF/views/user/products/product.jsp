@@ -15,8 +15,8 @@
 Body Section 
 -->
 	<div class="row product-content">
-		<div id="sidebar" class="span3"></div>
-		<div class="span9">
+		<div id="sidebar"></div>
+		<div class="span12">
 			<ul class="breadcrumb">
 				<li><a href="index.html">Trang chủ</a> <span class="divider">/</span></li>
 				<li><a href="#">Sản phẩm</a> <span class="divider">/</span></li>
@@ -109,7 +109,7 @@ Body Section
 											₫
 										</h3>
 										<div class="btn-group">
-											<a href="#" class="defaultBtn"><span
+											<a href="<c:url value="/AddCart/${ item.id_product }"/>" class="defaultBtn"><span
 												class=" icon-shopping-cart"></span> Add to cart</a> <a href="#"
 												class="shopBtn">VIEW</a>
 										</div>

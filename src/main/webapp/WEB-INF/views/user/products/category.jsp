@@ -46,7 +46,7 @@
 						<li class="span4">
 							<div class="thumbnail">
 								<a href="#" class="overlay"></a>
-								<a class="zoomTool" href="#" title="add to cart">
+								<a class="zoomTool" href="<c:url value="/chi-tiet-san-pham/${ item.id_product }"/>" title="add to cart">
 									<span class="icon-search"></span> QUICK VIEW
 								</a>
 								
@@ -61,7 +61,7 @@
 										</strong>
 									</p>
 									<h4>
-										<a class="shopBtn" href="#" title="add to cart"> Add to cart </a>
+										<a class="shopBtn" href="<c:url value="/AddCart/${ item.id_product }"/>" title="add to cart"> Add to cart </a>
 									</h4>
 									<div class="actionList">
 										<a class="pull-left" href="#">Add to Wish List </a>
