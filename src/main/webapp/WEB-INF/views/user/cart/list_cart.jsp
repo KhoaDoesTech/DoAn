@@ -40,9 +40,9 @@
 						<input type="number" min="0" max="1000" class="span1" style="max-width:34px" placeholder="1" id="appendedInputButtons" size="16" type="text" value="${ item.value.quanty }">
 					  </td>
 	                  <td>
-	                  	<a href="<c:url value="/EditCart/${ item.key }"/>" class="btn btn-mini btn-danger" type="button">
+	                  	<button data-id="${ item.key }" class="btn btn-mini btn-danger" type="button">
 	                  		<span class="icon-edit"></span>
-	                  	</a>
+	                  	</button>
 	                  </td>
 	                  <td>
 	                  	<a href="<c:url value="/DeleteCart/${ item.key }"/>" class="btn btn-mini btn-danger" type="button">
@@ -56,10 +56,19 @@
 				</tbody>
             </table><br/>
 			
-	<a href="products.html" class="shopBtn btn-large"><span class="icon-arrow-left"></span> Tiếp tục mua sắm </a>
-	<a href="login.html" class="shopBtn btn-large pull-right">Thanh toán <span class="icon-arrow-right"></span></a>
+	<a href="/DoAn/" class="shopBtn btn-large"><span class="icon-arrow-left"></span> Tiếp tục mua sắm </a>
+	<a href="checkout" class="shopBtn btn-large pull-right">Thanh toán <span class="icon-arrow-right"></span></a>
 
 </div>
 </div>
 </div>
+<content tag="script">
+<script>
+	$(".edit-cart").on("click", function(){
+		var id = $(this).data("id");
+		var quanty = $("#quanty-cart-"+id).val();
+		window.location = "EditCart/"+id+"/"+quanty;
+	});
+</script>
+</content>
 </body>

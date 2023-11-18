@@ -7,12 +7,17 @@ import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 
 import com.doan.Dto.CartDto;
+import com.doan.Entity.Bills;
+import com.doan.Entity.Users;
+import com.doan.Service.User.BillsServiceImpl;
 import com.doan.Service.User.CartServiceImpl;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -23,6 +28,9 @@ public class CartController extends BaseController{
 	
 	@Autowired
 	private CartServiceImpl cartService = new CartServiceImpl();
+	
+	@Autowired
+	private BillsServiceImpl billsService = new BillsServiceImpl();
 	
 	@RequestMapping(value = "gio-hang")
 	public ModelAndView Index() {
@@ -46,16 +54,16 @@ public class CartController extends BaseController{
 		return "redirect:"+request.getHeader("Referer");
 	}
 	
-	@RequestMapping(value = "EditCart/{id}")
-	public String EditCart(HttpServletRequest request ,HttpSession session, @PathVariable long id) {
+	@RequestMapping(value = "EditCart/{id}/{quanty}")
+	public String EditCart(HttpServletRequest request ,HttpSession session, @PathVariable long id, @PathVariable int quanty) {
 		HashMap<Long, CartDto> cart = (HashMap<Long, CartDto>)session.getAttribute("Cart");
 		if(cart == null) {
 			cart = new HashMap<Long, CartDto>();
 		}
-//		cart = cartService.EditCart(id, quanty, cart);
-//		session.setAttribute("Cart", cart);
-//		session.setAttribute("TotalQuantyCart", cartService.TotalQuanty(cart));
-//		session.setAttribute("TotalPriceCart", cartService.TotalPrice(cart));
+		cart = cartService.EditCart(id, quanty, cart);
+		session.setAttribute("Cart", cart);
+		session.setAttribute("TotalQuantyCart", cartService.TotalQuanty(cart));
+		session.setAttribute("TotalPriceCart", cartService.TotalPrice(cart));
 		return "redirect:"+request.getHeader("Referer");
 	}
 	
@@ -71,5 +79,29 @@ public class CartController extends BaseController{
 		session.setAttribute("TotalQuantyCart", cartService.TotalQuanty(cart));
 		session.setAttribute("TotalPriceCart", cartService.TotalPrice(cart));
 		return "redirect:"+request.getHeader("Referer");
+	}
+	
+	@RequestMapping(value = "checkout",method= RequestMethod.GET)
+	public ModelAndView CheckOut(HttpServletRequest request ,HttpSession session) {
+		_mvShare.setViewName("user/bills/checkout");
+		Bills bills = new Bills();
+		Users loginInfo = (Users)session.getAttribute("LoginInfo");
+		if(loginInfo != null) {
+			bills.setAddress(loginInfo.getAddress());
+			bills.setDisplay_name(loginInfo.getDisplay_name());
+			bills.setUser(loginInfo.getUser());
+		}
+		_mvShare.addObject("bills", bills);
+		return _mvShare;
+	}
+	
+	@RequestMapping(value = "checkout",method= RequestMethod.POST)
+	public String CheckOutBill(HttpServletRequest request ,HttpSession session, @ModelAttribute("bills") Bills bill) {
+		if(billsService.AddBills(bill) > 0) {
+			HashMap<Long, CartDto> carts = (HashMap<Long, CartDto>)session.getAttribute("Cart");
+			billsService.AddBillsDetail(carts);
+		}
+		session.removeAttribute("Cart");
+		return "redirect:gio-hang";
 	}
 }

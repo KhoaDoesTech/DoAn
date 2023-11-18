@@ -70,7 +70,8 @@ Navigation Bar Section
 										in</button>
 								</div>
 							</form>
-						</div></li>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
