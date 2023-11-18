@@ -6,13 +6,8 @@
 </head>
 <body>
 	<div class="row">
-<<<<<<< Updated upstream
-		<div id="sidebar" class="span2"></div>
-		<div class="span9">
-=======
 		<div id="sidebar"></div>
 		<div class="span12">
->>>>>>> Stashed changes
 			<ul class="breadcrumb">
 				<li><a href="<c:url value="/"/>">Trang chủ</a> <span class="divider">/</span></li>
 				<li class="active">Người dùng</li>
