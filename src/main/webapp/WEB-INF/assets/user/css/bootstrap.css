@@ -227,7 +227,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #14033D;
 }
 
 a {
@@ -736,13 +736,21 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6 {
   margin: 10px 0;
   font-family: inherit;
   font-weight: bold;
   line-height: 20px;
-  color: inherit;
+  color: #fff;
+  text-rendering: optimizelegibility;
+}
+
+h5 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000;
   text-rendering: optimizelegibility;
 }
 
@@ -3108,12 +3116,26 @@ table th[class*="span"],
           border-radius: 4px;
 }
 
+.slide {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #2BBEC1;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
 .well {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
+  background-color: #38A59F;
+  border: 1px solid #38A59F;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
@@ -4404,6 +4426,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .container {
   width: auto;
+  background-color: #38A59F;
 }
 
 .nav-collapse.collapse {
@@ -4613,7 +4636,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: #777777;
+  color: #ffffff;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
@@ -5682,7 +5705,7 @@ a.badge:focus {
 
 .label-warning,
 .badge-warning {
-  background-color: #f89406;
+  background-color: #FF9045;
 }
 
 .label-warning[href],

@@ -6,7 +6,7 @@
 		<div class="span4">
 			<h1>
 				<a class="logo" href="<c:url value="/"/>"><img
-					src="<c:url value="/assets/user/img/logo.png" />"
+					src="<c:url value="/assets/user/img/logo1.png" />"
 					alt="bootstrap sexy shop"> </a>
 			</h1>
 		</div>

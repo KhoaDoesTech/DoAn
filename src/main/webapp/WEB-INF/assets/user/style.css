@@ -1,7 +1,3 @@
-body {
-	background: url(assets/user/img/background.png) repeat 0 0;
-}
-
 #header {
 	padding: 8px 0 8px;
 }
@@ -75,6 +71,7 @@ body {
 h3 {
 	font-size: 18px;
 	line-height: 1.5em;
+	color: #fff;
 }
 
 hr.soften {
@@ -216,7 +213,7 @@ hr.soften {
 
 .carousel-control,
 .carousel-control:hover {
-	background: rgba(248, 118, 16, 1);
+	background: FF9045;
 	height: 43px;
 	line-height: 34px;
 	color: #fff;
@@ -239,11 +236,11 @@ hr.soften {
 }
 
 .homCar p span {
-	background-color: #fff;
+	background-color: #FF9045;
 	color: #000;
 	padding: 2px 10px;
-	line-height: 30px;
-	font-size: 28px;
+	line-height: 22px;
+	font-size: 20px;
 	float: left;
 	width: auto;
 	opacity: 0.8;
@@ -252,10 +249,12 @@ hr.soften {
 
 .carousel-control.left {
 	left: -15600px;
+	background-color: #FF9045;
 }
 
 .carousel-control.right {
 	right: -15600px;
+	background-color: #FF9045;
 }
 
 .carousel:hover .carousel-control.right {
@@ -328,7 +327,14 @@ hr.soften {
 .thumbnail .caption {
 	padding: 9px;
 	color: #555555;
-	background: #F3F2F2;
+	background: #2BBEC1;
+	height: 90px;
+}
+
+.thumbnail .slide {
+	padding: 9px;
+	color: #fff;
+	background: #38A59F;
 }
 
 .footer {
@@ -355,12 +361,12 @@ hr.soften {
 .topNav {
 	padding: 0;
 	border-bottom: 1px solid #CCC;
-	background: #f2f2f2;
+	background: #38A59F;
 	box-shadow: 0 0 3px #B1AFAF;
 }
 
 .topNav a {
-	color: #333;
+	color: #fff;
 	font-size: 12px;
 	font-weight: bold;
 	display: inline-block;
@@ -369,8 +375,8 @@ hr.soften {
 
 .topNav a:hover,
 .topNav a.active {
-	color: #fff;
-	background: #f89406;
+	color: #000;
+	background: #FF9045;
 	text-decoration: none
 }
 
@@ -383,8 +389,8 @@ hr.soften {
 	margin-top: 3px;
 	font-size: 21px;
 	border-radius: 50%;
-	background: #999;
-	color: #fff;
+	background: #fff;
+	color: #000;
 	text-align: center;
 }
 
@@ -406,11 +412,11 @@ hr.soften {
 }
 
 #sidebar .nav a {
-	color: #000
+	color: #fff
 }
 
 #sidebar .nav a:hover {
-	color: #f89406
+	color: #FF9045
 }
 
 #sidebar .cart {
@@ -463,7 +469,8 @@ hr.soften {
 
 .thumbnail h5,
 .thumbnail p {
-	text-align: center
+	text-align: center;
+	height: 90px;
 }
 
 .bs-docs-sidenav>li>a {
@@ -525,7 +532,7 @@ hr.soften {
 	line-height: 1.5em;
 	color: #ffffff;
 	text-align: center;
-	background: #FFA300;
+	background: #FF9045;
 	border: 0;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -555,7 +562,7 @@ hr.soften {
 	text-align: center;
 	color: #fff;
 	border-radius: 2px;
-	background: #f89406;
+	background: #FF9045;
 	position: absolute;
 	left: 50%;
 	top: 44%;
@@ -565,7 +572,7 @@ hr.soften {
 }
 
 .thumbnail {
-	background: #fff
+	background: #fff;
 }
 
 .zoomTool:hover {
@@ -586,7 +593,7 @@ hr.soften {
 	text-align: center;
 	color: #fff;
 	border-radius: 2px;
-	background: #f89406;
+	background: #FF9045;
 	display: inline-block;
 	padding: 0 12px;
 	border: 0;
@@ -601,20 +608,20 @@ hr.soften {
 	border-radius: 2px;
 	display: inline-block;
 	padding: 0 12px;
-	color: #666;
+	color: #fff;
 	text-decoration: none;
-	background: #e6e6e6;
+	background: #FF9045;
 	border: 0;
 }
 
 .shopBtn:hover {
 	color: #fff;
 	text-decoration: none;
-	background: #F86706
+	background: #FF9045
 }
 
 .gotop {
-	background-color: #000000;
+	background-color: #A31727;
 	display: none;
 	position: fixed;
 	bottom: 30px;

@@ -55,7 +55,7 @@ Body Section
 		<!--
 New Products
 -->
-		<div class="well well-small">
+		<div class="slide well-small">
 			<h3>Sản phẩm mới</h3>
 			<hr class="soften" />
 			<div class="row-fluid">
@@ -73,7 +73,7 @@ New Products
 													QUICK VIEW</a> <img
 													src="<c:url value="/assets/user/img/${ item.img }"/>"
 													alt="shopping cart template">
-												<div class="caption">
+												<div class="slide">
 													<h4>
 														<a class="defaultBtn"
 															href="chi-tiet-san-pham/${ item.id_product }">VIEW</a> 
