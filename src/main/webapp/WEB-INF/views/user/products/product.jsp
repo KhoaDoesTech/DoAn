@@ -44,30 +44,22 @@ Body Section
 
 						<form class="form-horizontal qtyFrm">
 							<div class="control-group">
-								<label class="control-label"><span><fmt:formatNumber
+								<label class="control-label"><span>Giá thành</span></label>
+								<label class="controls"><span><fmt:formatNumber
 											type="number" groupingUsed="true" value="${ product.price }" />₫</span></label>
-								<div class="controls">
-									<input type="number" min="0" value="0" class="span6">
-								</div>
+
 							</div>
 
 							<div class="control-group">
-								<label class="control-label"><span>Color</span></label>
+								<label class="control-label"><span>Số lượng</span></label>
 								<div class="controls">
-									<select class="span11">
-										<option>Red</option>
-										<option>Purple</option>
-										<option>Pink</option>
-										<option>Red</option>
-									</select>
+									<input type="number" min="0" value="0" class="span8">
 								</div>
 							</div>
-							<h4></h4>
+							<h4>Mô tả</h4>
 							<p>${ product.title }
 							<p>
-								<button type="submit" class="shopBtn">
-									<span class=" icon-shopping-cart"></span> Add to cart
-								</button>
+								<a class="shopBtn" href="<c:url value="/AddCart/${ product.id_product }"/>" title="add to cart"> Add to cart </a>
 						</form>
 					</div>
 				</div>
