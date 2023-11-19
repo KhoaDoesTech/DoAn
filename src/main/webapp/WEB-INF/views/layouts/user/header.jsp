@@ -27,12 +27,12 @@ Navigation Bar Section
 				<ul class="nav">
 					<c:forEach var="item" items="${ menus }" varStatus="index">
 						<c:if test="${ index.first }">
-							<li class="active">
+							<li class="">
 						</c:if>
 						<c:if test="${ not index.first }">
 							<li class="">
 						</c:if>
-						<a href="<c:url value="/${ item.url }"/>">${ item.name } </a></li>
+						<a href="<c:url value="/${ item.url }"/>">${ item.name } </a>
 					</c:forEach>
 					
 				</ul>
@@ -58,8 +58,7 @@ Navigation Bar Section
 										<label class="checkbox"> <input type="checkbox">
 											Remember me
 										</label>
-										<button type="submit" class="shopBtn btn-block">Sign
-											in</button>
+										<button type="submit" class="shopBtn btn-block">Sign in</button>
 									</div>
 								</form>
 							</div>

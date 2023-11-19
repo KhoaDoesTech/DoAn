@@ -35,7 +35,7 @@
 						<a href="#"><span class="icon-tumblr"></span></a>
 					</div>
 					
-					<a class="active" href="<c:url value="/"/>"> <span class="icon-home"></span> Trang chủ </a>
+					<a class="" href="<c:url value="/"/>"> <span class="icon-home"></span> Trang chủ </a>
 					<c:if test="${not empty LoginInfo }">
 						<a href="#"><span class="icon-user"></span>${LoginInfo.display_name }</a>
 						<a href="<c:url value="/dang-xuat"/>"><span class="icon-edit"></span> Đăng xuất</a>
