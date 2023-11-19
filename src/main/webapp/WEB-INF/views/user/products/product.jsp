@@ -18,7 +18,7 @@ Body Section
 		<div id="sidebar"></div>
 		<div class="span12">
 			<ul class="breadcrumb">
-				<li><a href="index.html">Trang chủ</a> <span class="divider">/</span></li>
+				<li><a href="<c:url value="/"/>">Trang chủ</a> <span class="divider">/</span></li>
 				<li><a href="#">Sản phẩm</a> <span class="divider">/</span></li>
 				<li class="active">Chi tiết sản phẩm</li>
 			</ul>
