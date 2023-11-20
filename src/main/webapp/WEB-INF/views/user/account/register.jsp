@@ -31,7 +31,7 @@
 							</div>
 
 							<div class="control-group">
-								<label class="control-label" for="inputEmail">Mật khẩu</label>
+								<label class="control-label" for="inputPass">Mật khẩu</label>
 								<div class="controls">
 									<form:input type="password" class="span3"
 										placeholder=" Mời nhập mật khẩu" path="password" />
@@ -39,7 +39,7 @@
 							</div>
 
 							<div class="control-group">
-								<label class="control-label" for="inputEmail">Họ và tên</label>
+								<label class="control-label" for="inputName">Họ và tên</label>
 								<div class="controls">
 									<form:input type="text" class="span3"
 										placeholder=" Mời nhập họ và tên " path="display_name" />
@@ -47,7 +47,7 @@
 							</div>
 
 							<div class="control-group">
-								<label class="control-label" for="inputEmail">Địa chỉ</label>
+								<label class="control-label" for="inputAddr">Địa chỉ</label>
 								<div class="controls">
 									<form:input type="text" class="span3"
 										placeholder=" Mời nhập địa chỉ" path="address" />
