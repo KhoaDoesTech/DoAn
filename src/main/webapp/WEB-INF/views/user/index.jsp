@@ -66,7 +66,7 @@ New Products
 								<ul class="thumbnails">
 									<c:forEach var="item" items="${ products }" varStatus="loop">
 										<li class="span4">
-											<div class="thumbnail">
+											<div class="slide-thumbnail">
 												<a class="zoomTool"
 													href="chi-tiet-san-pham/${ item.id_product }"
 													title="Add to cart"><span class="icon-search"></span>
@@ -76,10 +76,9 @@ New Products
 												<div class="slide">
 													<h4>
 														<a class="defaultBtn"
-															href="chi-tiet-san-pham/${ item.id_product }">VIEW</a> 
-															<span class="pull-right">															
-																<fmt:formatNumber type="number" groupingUsed="true" value="${ item.price }" />₫
-															</span>								
+															href="chi-tiet-san-pham/${ item.id_product }">VIEW</a> <span
+															class="pull-right"><fmt:formatNumber type="number"
+																groupingUsed="true" value="${ item.price }" /> ₫</span>
 													</h4>
 												</div>
 											</div>

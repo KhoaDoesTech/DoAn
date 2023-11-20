@@ -53,9 +53,9 @@
 										placeholder=" Mời nhập địa chỉ" path="address" />
 								</div>
 							</div>
-
+							<br />
 							<div class="controls">
-								<button type="submit" class="btn block">Đăng ký thành
+								<button type="submit" class="defaultBtn">Đăng ký thành
 									viên</button>
 							</div>
 
@@ -66,6 +66,7 @@
 				<div class="span4">
 					<div class="well">
 						<h5>Đăng nhập hệ thống</h5>
+						<br /> <br />
 						<c:if test="${ statusLogin }">
 							<h1>${statusLogin}</h1>
 						</c:if>
@@ -85,6 +86,7 @@
 										placeholder=" Mời nhập mật khẩu" path="password" />
 								</div>
 							</div>
+							<br />
 							<div class="control-group">
 								<div class="controls">
 									<button type="submit" class="defaultBtn">Đăng nhập</button>

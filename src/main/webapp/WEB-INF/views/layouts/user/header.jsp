@@ -37,8 +37,8 @@ Navigation Bar Section
 					</c:forEach>
 					
 				</ul>
-				<form action="#" class="navbar-search pull-left">
-					<input type="text" placeholder="Search" class="search-query span2">
+				<form action="#" class="navbar-search">
+					<input type="text" placeholder="Search" class="search-query span3">
 				</form>
 			</div>
 		</div>

@@ -71,7 +71,7 @@
 h3 {
 	font-size: 18px;
 	line-height: 1.5em;
-	color: #fff;
+	color: #000;
 }
 
 hr.soften {
@@ -307,7 +307,7 @@ hr.soften {
 }
 
 .navbar-search {
-	margin-left: 6px;
+	margin-left: 170px;
 }
 
 .actionList a {
@@ -326,9 +326,9 @@ hr.soften {
 
 .thumbnail .caption {
 	padding: 9px;
-	color: #555555;
+	color: #000;
 	background: #2BBEC1;
-	height: 90px;
+	height: 140px;
 }
 
 .thumbnail .slide {
@@ -434,8 +434,8 @@ hr.soften {
 	line-height: 21px;
 }
 
-#sidebar a.defaultBtn:hover,
-.defaultBtn:hover {
+#sidebar a.defaultBtn:hover, .defaultBtn:hover,
+a.shopBtn:hover, .shopBtn:hover {
 	color: #fff;
 	text-decoration: none;
 	background: #333
@@ -470,7 +470,7 @@ hr.soften {
 .thumbnail h5,
 .thumbnail p {
 	text-align: center;
-	height: 90px;
+	height: 80px;
 }
 
 .bs-docs-sidenav>li>a {

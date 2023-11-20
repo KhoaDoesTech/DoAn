@@ -10,23 +10,22 @@
 }
 
 .pagination a {
-	color: black;
+	color: white;
+	background-color: #38A59F;
 	float: left;
 	padding: 8px 16px;
 	text-decoration: none;
 	transition: background-color .3s;
-	border: 1px solid #ddd;
+	border: 2px solid #fff;
 }
 
-.pagination a.active {
-	background-color: #4CAF50;
+.pagination a.active, .pagination a:hover {
+	color: black;
+	background-color: #FF9045;
 	color: white;
-	border: 1px solid #4CAF50;
+	border: 2px solid #fff;
 }
 
-.pagination a:hover:not (.active ) {
-	background-color: #ddd;
-}
 </style>
 </head>
 <body>
@@ -55,18 +54,11 @@
 								</a>
 								<div class="caption cntr">
 									<p>${ item.name }</p>
-									<p>
-										<strong>
-											<fmt:formatNumber type="number" groupingUsed="true" value="${ item.price }" />₫
-										</strong>
-									</p>
+									<fmt:formatNumber type="number" groupingUsed="true" value="${ item.price }" />₫
+									<br/>
 									<h4>
 										<a class="shopBtn" href="<c:url value="/AddCart/${ item.id_product }"/>" title="add to cart"> Add to cart </a>
 									</h4>
-									<div class="actionList">
-										<a class="pull-left" href="#">Add to Wish List </a>
-										<a class="pull-left" href="#"> Add to Compare </a>
-									</div>
 									<br class="clr">
 								</div>
 							</div>
