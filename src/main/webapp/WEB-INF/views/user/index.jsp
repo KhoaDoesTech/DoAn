@@ -155,11 +155,8 @@ New Products
 			</div>
 		</div>
 		<hr>
-		<div class="well well-small">
-			<a class="btn btn-mini pull-right" href="#">Xem thêm <span
-				class="icon-plus"></span></a> Tất cả sản phẩm
-		</div>
 	</div>
+	
 	</div>
 
 </body>
