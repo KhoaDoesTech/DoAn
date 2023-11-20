@@ -102,8 +102,7 @@ Body Section
 										</h3>
 										<div class="btn-group">
 											<a href="<c:url value="/AddCart/${ item.id_product }"/>" class="defaultBtn"><span
-												class=" icon-shopping-cart"></span> Add to cart</a> <a href="#"
-												class="shopBtn">VIEW</a>
+												class=" icon-shopping-cart"></span> Add to cart</a> <a href="<c:url value="/chi-tiet-san-pham/${ item.id_product }"/>" class="shopBtn">VIEW</a>
 										</div>
 									</form>
 								</div>
