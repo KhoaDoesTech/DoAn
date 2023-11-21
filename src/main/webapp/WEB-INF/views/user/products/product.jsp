@@ -18,7 +18,8 @@ Body Section
 		<div id="sidebar"></div>
 		<div class="span12">
 			<ul class="breadcrumb">
-				<li><a href="<c:url value="/"/>">Trang chủ</a> <span class="divider">/</span></li>
+				<li><a href="<c:url value="/"/>">Trang chủ</a> <span
+					class="divider">/</span></li>
 				<li><a href="#">Sản phẩm</a> <span class="divider">/</span></li>
 				<li class="active">Chi tiết sản phẩm</li>
 			</ul>
@@ -44,8 +45,8 @@ Body Section
 
 						<form class="form-horizontal qtyFrm">
 							<div class="control-group">
-								<label class="control-label"><span>Giá thành</span></label>
-								<label class="controls"><span><fmt:formatNumber
+								<label class="control-label"><span>Giá thành</span></label> <label
+									class="controls"><span><fmt:formatNumber
 											type="number" groupingUsed="true" value="${ product.price }" />₫</span></label>
 
 							</div>
@@ -59,7 +60,9 @@ Body Section
 							<h4>Mô tả</h4>
 							<p>${ product.title }
 							<p>
-								<a class="shopBtn" href="<c:url value="/AddCart/${ product.id_product }"/>" title="add to cart"> Add to cart </a>
+								<a class="shopBtn"
+									href="<c:url value="/AddCart/${ product.id_product }"/>"
+									title="add to cart"> Add to cart </a>
 						</form>
 					</div>
 				</div>
@@ -73,7 +76,28 @@ Body Section
 							liên quan </a></li>
 				</ul>
 				<div id="myTabContent" class="tab-content tabWrapper">
-					<div class="tab-pane fade active in" id="home">${ product.details }
+					<div class="tab-pane fade active in" id="home">
+						<h4>Product Information</h4>
+						<table class="table table-striped">
+							<tbody>
+								<tr class="techSpecRow">
+									<td class="techSpecTD1">Chất liệu:</td>
+									<td class="techSpecTD2">TC cá sấu</td>
+								</tr>
+								<tr class="techSpecRow">
+									<td class="techSpecTD1">Form:</td>
+									<td class="techSpecTD2">Oversize</td>
+								</tr>
+								<tr class="techSpecRow">
+									<td class="techSpecTD1">Màu sắc:</td>
+									<td class="techSpecTD2">Đen phối trắng</td>
+								</tr>
+								<tr class="techSpecRow">
+									<td class="techSpecTD1">Thiết kế:</td>
+									<td class="techSpecTD2">In cao thành</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					<div class="tab-pane fade" id="profile">
 
@@ -101,8 +125,11 @@ Body Section
 											₫
 										</h3>
 										<div class="btn-group">
-											<a href="<c:url value="/AddCart/${ item.id_product }"/>" class="defaultBtn"><span
-												class=" icon-shopping-cart"></span> Add to cart</a> <a href="<c:url value="/chi-tiet-san-pham/${ item.id_product }"/>" class="shopBtn">VIEW</a>
+											<a href="<c:url value="/AddCart/${ item.id_product }"/>"
+												class="defaultBtn"><span class=" icon-shopping-cart"></span>
+												Add to cart</a> <a
+												href="<c:url value="/chi-tiet-san-pham/${ item.id_product }"/>"
+												class="shopBtn">VIEW</a>
 										</div>
 									</form>
 								</div>
