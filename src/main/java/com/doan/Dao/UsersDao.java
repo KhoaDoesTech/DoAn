@@ -20,7 +20,7 @@ public class UsersDao extends BaseDao{
 		sql.append("(");
 		sql.append("'"+user.getEmail()+"', ");
 		sql.append("'"+user.getPassword()+"', ");
-		sql.append("'"+user.getDisplay_name()+"', ");
+		sql.append("N'"+user.getDisplay_name()+"', ");
 		sql.append("'"+user.getAddress()+"'");
 		sql.append(")");
 

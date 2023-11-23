@@ -14,7 +14,7 @@
 				<li class="active">Người dùng</li>
 			</ul>
 
-			<h3>Người dùng</h3>
+			<h2>Người dùng</h2>
 			<hr class="soft" />
 
 			<div class="row">
